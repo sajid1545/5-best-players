@@ -73,7 +73,7 @@
                 <div class="col ">
                     <div class="card bg-black border-0 text-white p-3">
                         <h1 class="text-center">Selected - V</h1>
-                        <ol id="selected-players-container" class="p-4 fs-5">
+                        <ol id="selected-players-container" class="p-4 fs-5" id="order-list-players">
                             <!-- comment -->
                         </ol>
                     </div>
@@ -134,7 +134,8 @@
                             class="button py-2 rounded border-0 text-light fw-bold fs-5 w-75 mx-auto my-3">Calculate
                         </button>
                         <div class="my-3">
-                            <p class="fs-5 text-white-50">Player Expenses : $<span id="player-expense"></span> </p>
+                            <p class="fs-5 text-white-50">Player Expenses : $<span id="player-expense"
+                                    style="color: orangered;"></span> </p>
                         </div>
                         <label for="" class="my-2">
                             <span class="fs-5 text-white-50 ">Manager </span>
@@ -165,6 +166,11 @@
     </main>
 
 
+    <footer class="mt-5">
+        <div class="border-top border-4 footer-info">
+
+        </div>
+    </footer>
 
 
     <!--  Bootstrap JS CDN====================================================================-->
@@ -173,6 +179,7 @@
         </script>
 
     <!-- External JS ====================================================================-->
+    <script src="js/utilities.js"></script>
     <script src="js/app.js"></script>
 </body>
 

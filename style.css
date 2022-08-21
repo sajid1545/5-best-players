@@ -9,7 +9,7 @@ header {
 }
 
 .top-five-h1 {
-    color: orangered;
+    color: #EDC126;
     font-family: cursive;
 }
 
@@ -22,4 +22,8 @@ header {
     /* width: 115px; */
     margin-left: 4%;
 
+}
+
+.footer-info {
+    padding: 7%;
 }
