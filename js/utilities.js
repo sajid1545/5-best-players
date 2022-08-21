@@ -16,3 +16,8 @@ function setTextElementValueById(elementId, newValue) {
     let element = document.getElementById(elementId);
     element.innerText = newValue;
 }
+
+function removeLastChild(elementId) {
+    let element = document.getElementById(elementId);
+    element.removeChild(element.lastChild);
+}
