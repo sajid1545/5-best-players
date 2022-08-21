@@ -16,6 +16,7 @@ for (let button of buttons) {
 
         for (let i = 0; i < selectedPlayers.length; i++) {
             let li = document.createElement('li');
+            li.classList = 'list';
             li.innerHTML = selectedPlayers[i].playerName;
             selectedPlayersContainer.appendChild(li);
         }
@@ -47,6 +48,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     let playerExpenses = playerFieldAmount * numberOfPlayersSelected;
 
     setTextElementValueById('player-expense', playerExpenses);
+    console.log(ol.childNodes);
 });
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
@@ -54,9 +56,15 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     let coachFieldElement = document.getElementById('coach-field');
     let managerFieldAmount = getInputFieldValueById('manager-field');
     let coachFieldAmount = getInputFieldValueById('coach-field');
-    if (isNaN(managerFieldAmount || coachFieldAmount)) {
+    if (isNaN(managerFieldAmount)) {
         alert('Enter a valid Amount');
         managerFieldElement.value = '';
+        coachFieldElement.value = '';
+        return;
+    }
+
+    if (isNaN(coachFieldAmount)) {
+        alert('Enter a valid Amount');
         coachFieldElement.value = '';
         return;
     }
