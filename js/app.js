@@ -18,28 +18,5 @@ for (let button of buttons) {
             li.innerHTML = selectedPlayers[i].playerName;
             selectedPlayersContainer.appendChild(li);
         }
-
-        button.setAttribute('disabled', true);
     });
 }
-
-// function addNewList() {
-//     let selectedPlayersContainer = document.getElementById('selected-players-container');
-//     // selectedPlayers.textContent = '';
-
-//     for (let i = 0; i < selectedPlayers.length; i++) {
-//         let li = document.createElement('li');
-//         li.innerText = selectedPlayers[i].playerName;
-//         selectedPlayersContainer.appendChild(li);
-//     }
-// }
-
-// function addToCard(element) {
-//     let playerName = element.parentNode.children[0].innerText;
-//     let player = {
-//         playerName: playerName,
-//     };
-//     selectedPlayers.push(player);
-//     element.setAttribute('disabled', true);
-//     addNewList();
-// }
