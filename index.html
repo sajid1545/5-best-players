@@ -16,18 +16,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-dark">
 
-    <header class="bg-black text-white text-center p-5 d-flex justify-content-center align-items-center">
-        <section class="top-five-section ">
+    <header class="bg-black text-white text-center p-5 mb-5 ">
+        <section class="top-five-section container  mx-auto ">
             <h1 class="display-1 fw-bolder top-five-h1 mb-3">Select Your Best Five</h1>
-            <p class="fs-5">Paris Saint-Germain Foundation develops educational and sports programs in France and
-                abroad, which use
-                sport and its values as a lever for learning, self-development and solidarity.</p>
+            <p class="fs-5 fw-semibold"></p>
         </section>
     </header>
 
+    <main>
+        <section class="container my-5">
+            <!-- row 1 including selected 5 column -->
+            <div class="row row-cols-4">
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Lionel Messi</h5>
+                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
+                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Lionel Messi</h5>
+                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
+                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Lionel Messi</h5>
+                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
+                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-black border-0 text-white">
+                        <h1 class="text-center">Selected - V</h1>
+                        <ol id="selected-players-container">
+                            <!-- comment -->
+                        </ol>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+    </main>
 
 
 
