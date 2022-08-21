@@ -20,7 +20,13 @@ header {
 
 .button {
     width: 220px;
-    background-color: #015196;
+    background-color: #383CC1;
+    transition: all ease-in-out 0.4s;
+
+}
+
+.button:hover {
+    background-color: #BF3312
 }
 
 .inputField {
@@ -29,9 +35,6 @@ header {
 
 }
 
-.footer-info {
-    padding: 7%;
-}
 
 .list {
     margin-top: 10px;
