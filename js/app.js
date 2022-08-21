@@ -23,7 +23,7 @@ for (let button of buttons) {
 
         button.setAttribute('disabled', true);
         button.style.backgroundColor = '#758283';
-        let ol = document.querySelector('.order-list-players');
+        let ol = document.getElementById('selected-players-container');
         if (ol.childNodes.length > 5) {
             removeLastChild('selected-players-container');
             alert('You cant add More than 5  players');
@@ -36,7 +36,8 @@ for (let button of buttons) {
 document.getElementById('calculate-btn').addEventListener('click', function () {
     let playerFieldElement = document.getElementById('per-player-field');
     let playerFieldAmount = getInputFieldValueById('per-player-field');
-    let ol = document.querySelector('.order-list-players');
+    let ol = document.getElementById('selected-players-container');
+    console.log(ol);
     let numberOfPlayersSelected = ol.childNodes.length;
 
     if (isNaN(playerFieldAmount)) {
@@ -63,7 +64,6 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     if (isNaN(managerFieldAmount)) {
         alert('Enter a valid Amount');
         managerFieldElement.value = '';
-        coachFieldElement.value = '';
         return;
     }
 

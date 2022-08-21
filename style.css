@@ -37,6 +37,9 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 25px;
+    font-weight: bolder;
+    font-family: cursive;
+
 }
 
 
@@ -45,4 +48,13 @@ header {
 .header-title {
     color: #FF5E19;
     font-family: 'Lobster', cursive;
+}
+
+
+.social-icons i {
+    transition: all ease-in-out 0.4s;
+}
+
+.social-icons i:hover {
+    color: #FF5E19;
 }
