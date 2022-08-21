@@ -17,3 +17,9 @@ header {
     width: 220px;
     background-color: #015196;
 }
+
+.inputField {
+    /* width: 115px; */
+    margin-left: 4%;
+
+}

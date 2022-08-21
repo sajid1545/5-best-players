@@ -21,7 +21,9 @@
     <header class="bg-black text-white text-center p-5 mb-5 ">
         <section class="top-five-section container  mx-auto ">
             <h1 class="display-1 fw-bolder top-five-h1 mb-3">Select Your Best Five</h1>
-            <p class="fs-5 fw-semibold"></p>
+            <p class="fs-5 fw-semibold">Paris Saint-Germain Football Club, commonly referred to as Paris Saint-Germain,
+                Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete in
+                Ligue 1, the top division of French football.</p>
         </section>
     </header>
 
@@ -35,8 +37,9 @@
                             <img src="images/image-1.png" class="card-img-top" alt="...">
                             <div class="card-body  text-center bg-dark text-white ">
                                 <h5 class="fs-2">Lionel Messi</h5>
-                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
-                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                                <p class="text-light fs-5">736 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
                             </div>
                         </div>
                     </div>
@@ -44,11 +47,12 @@
                 <div class="col">
                     <div>
                         <div class="card border-3 border-light">
-                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <img src="images/image-2.png" class="card-img-top" alt="...">
                             <div class="card-body  text-center bg-dark text-white ">
-                                <h5 class="fs-2">Lionel Messi</h5>
-                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
-                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                                <h5 class="fs-2">Neymar</h5>
+                                <p class="text-light fs-5">136 Goals <span class="fw-bolder"> ::</span> 100 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
                             </div>
                         </div>
                     </div>
@@ -56,11 +60,12 @@
                 <div class="col">
                     <div>
                         <div class="card border-3 border-light">
-                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <img src="images/image-3.png" class="card-img-top" alt="...">
                             <div class="card-body  text-center bg-dark text-white ">
-                                <h5 class="fs-2">Lionel Messi</h5>
-                                <p class="text-light fs-5">36 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
-                                <button class="button py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                                <h5 class="fs-2">Kylian Mbappé</h5>
+                                <p class="text-light fs-5">98 Goals <span class="fw-bolder"> ::</span> 76 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
                             </div>
                         </div>
                     </div>
@@ -71,6 +76,87 @@
                         <ol id="selected-players-container">
                             <!-- comment -->
                         </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 and calculations -->
+
+            <div class="row row-cols-4 my-5">
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-1.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Lionel Messi</h5>
+                                <p class="text-light fs-5">736 Goals <span class="fw-bolder"> ::</span> 400 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-2.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Neymar</h5>
+                                <p class="text-light fs-5">136 Goals <span class="fw-bolder"> ::</span> 100 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="card border-3 border-light">
+                            <img src="images/image-3.png" class="card-img-top" alt="...">
+                            <div class="card-body  text-center bg-dark text-white ">
+                                <h5 class="fs-2">Kylian Mbappé</h5>
+                                <p class="text-light fs-5">98 Goals <span class="fw-bolder"> ::</span> 76 Assists </p>
+                                <button onclick="addToCard(this)"
+                                    class="button button-select py-2 rounded border-0 text-light fw-bold fs-5">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-black border-0 text-white p-3">
+                        <h1 class="text-center">Budget</h1>
+                        <label for="" class="my-2">
+                            <span class="fs-5 text-white-50 ">Per Player </span>
+                            <input type="text" id="per-player-field"
+                                class='w-50 p-2 bg-black text-white fw-bold border-2 border-white inputField '>
+                        </label>
+                        <button id="calculate-btn"
+                            class="button py-2 rounded border-0 text-light fw-bold fs-5 w-75 mx-auto my-3">Calculate
+                        </button>
+                        <div class="my-3">
+                            <p class="fs-5 text-white-50">Player Expenses : $<span id="player-expense"></span> </p>
+                        </div>
+                        <label for="" class="my-2">
+                            <span class="fs-5 text-white-50 ">Manager </span>
+                            <input type="text" id="manager-field"
+                                class='w-50 p-2 bg-black text-white fw-bold border-2 border-white inputField '>
+                        </label>
+                        <label for="" class="my-2">
+                            <span class="fs-5 text-white-50 ">Coach </span>
+                            <input type="text" id="coach-field"
+                                class='w-50 p-2 bg-black text-white fw-bold border-2 border-white inputField '>
+                        </label>
+                        <button id="calculate-total-btn"
+                            class="button py-2 rounded border-0 text-light fw-bold fs-5 w-75 mx-auto my-3">Calculate
+                            Total
+                        </button>
+                        <div class="my-3 d-flex justify-content-between">
+                            <p class="fs-5 text-white-50">Total : $ </p>
+                            <span id="total-amount" class="fs-5" style="color: orangered;"></span>
+                        </div>
+
+
+
                     </div>
                 </div>
             </div>
