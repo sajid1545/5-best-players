@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-color: #151515;
+}
+
 header {
-    background-image: url(images/psg.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(images/psg.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -28,4 +34,16 @@ header {
     padding: 7%;
 }
 
-.list {}
+.list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+
+
+.select-players-heading,
+.header-title {
+    color: #FF5E19;
+    font-family: 'Lobster', cursive;
+}

@@ -23,12 +23,11 @@
     <header class="bg-black text-white text-center p-5 mb-5 ">
         <section class="top-five-section container  mx-auto ">
             <div class="container">
-                <h1 class="display-1 fw-bolder top-five-h1 mb-3">Select Your Best Five</h1>
+                <h1 class="display-1 fw-bolder top-five-h1 mb-3 header-title">Choose the best <span
+                        style="color:orange">five</span> players</h1>
                 <p class="fs-5 fw-semibold">Paris Saint-Germain Football Club, commonly referred to as Paris
-                    Saint-Germain,
-                    Paris, Paris SG or simply PSG is a professional football club based in Paris, France. They compete
-                    in
-                    Ligue 1, the top division of French football.
+                    Saint-Germain, Paris, Paris SG or simply PSG is a professional football club based in Paris, France.
+                    They compete in Ligue 1, the top division of French football.
                 </p>
             </div>
         </section>
@@ -37,7 +36,7 @@
     <main>
         <section class="container my-5">
             <!-- row 1 including selected 5 column -->
-            <div class="row row-cols-4">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
                 <div class="col">
                     <div>
                         <div class="card border-3 border-light">
@@ -79,7 +78,7 @@
                 </div>
                 <div class="col ">
                     <div class="card bg-black border-0 text-white p-3">
-                        <h1 class="text-center">Selected - V</h1>
+                        <h1 class="text-center select-players-heading">Selected - V</h1>
                         <ol id="selected-players-container" class="p-4 fs-5 order-list-players">
                             <!-- comment -->
                         </ol>
@@ -89,7 +88,7 @@
 
             <!-- Row 2 and calculations -->
 
-            <div class="row row-cols-4 my-5">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 my-5">
                 <div class="col">
                     <div>
                         <div class="card border-3 border-light">
@@ -131,7 +130,7 @@
                 </div>
                 <div class="col">
                     <div class="card bg-black border-0 text-white p-3">
-                        <h1 class="text-center">Budget</h1>
+                        <h1 class="text-center header-title">Budget</h1>
                         <label for="" class="my-2">
                             <span class="fs-5 text-white-50 ">Per Player </span>
                             <input type="text" id="per-player-field"
@@ -188,13 +187,13 @@
                 </div>
             </div>
 
-            <div class="text-center " style="color: orangered;">
-                <h1 class="fw-bolder fs-1">Paris Saint German</h1>
+            <div class="text-center my-4" style="color: orangered;">
+                <h1 class="fw-bolder display-3 header-title">Paris Saint German</h1>
             </div>
 
-            <div class="text-center my-4">
-                <input type="email" class="email-input p-2 rounded border-0 w-50" placeholder="Email">
-                <button class="btn btn-outline-danger border-0 p-2">Subscribe</button>
+            <div class="text-center mt-4">
+                <input type="email" class="email-input  rounded border-0 w-75 py-3 px-3" placeholder="Email">
+                <button class="btn btn-outline-danger border-0 p-2 fs-4">Subscribe</button>
             </div>
         </div>
     </footer>
