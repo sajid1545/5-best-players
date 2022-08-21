@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
-    background-color: #151515;
+    background-color: #0D0D0D;
 }
 
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(images/psg.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(images/psg-2.jpg);
     background-size: cover;
     background-position: center;
+
 }
 
-.top-five-section {
-    padding: 10%;
-}
+
 
 .top-five-h1 {
     color: #EDC126;

@@ -43,12 +43,16 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         alert('Enter a valid Amount');
         playerFieldElement.value = '';
         return;
+    } else if (selectedPlayers.length == 0) {
+        alert('You have to choose players before calculating the cost');
+        playerFieldElement.value = '';
+
+        return;
     }
 
     let playerExpenses = playerFieldAmount * numberOfPlayersSelected;
 
     setTextElementValueById('player-expense', playerExpenses);
-    console.log(ol.childNodes);
 });
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
