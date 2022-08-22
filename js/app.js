@@ -21,13 +21,15 @@ for (let button of buttons) {
             selectedPlayersContainer.appendChild(li);
         }
 
-        button.setAttribute('disabled', true);
-        button.style.backgroundColor = '#758283';
         let ol = document.getElementById('selected-players-container');
         if (ol.childNodes.length > 5) {
             removeLastChild('selected-players-container');
             alert('You cant add More than 5  players');
+            button.removeAttribute('disabled');
+            return;
         }
+        button.setAttribute('disabled', true);
+        button.style.backgroundColor = '#758283';
     });
 }
 
