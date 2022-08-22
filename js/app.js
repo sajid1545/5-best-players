@@ -19,13 +19,14 @@ for (let button of buttons) {
             li.classList = 'list';
             li.innerHTML = selectedPlayers[i].playerName;
             selectedPlayersContainer.appendChild(li);
-        }
 
-        if (selectedPlayersContainer.childNodes.length > 5) {
-            removeLastChild('selected-players-container');
-            alert('You cant add More than 5  players');
-            button.removeAttribute('disabled');
-            return;
+            if (selectedPlayersContainer.childNodes.length > 5) {
+                removeLastChild('selected-players-container');
+                button.removeAttribute('disabled');
+                alert('You cant add More than 5  players');
+
+                return;
+            }
         }
         button.setAttribute('disabled', true);
         button.style.backgroundColor = '#758283';
