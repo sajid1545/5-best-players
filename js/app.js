@@ -21,8 +21,7 @@ for (let button of buttons) {
             selectedPlayersContainer.appendChild(li);
         }
 
-        let ol = document.getElementById('selected-players-container');
-        if (ol.childNodes.length > 5) {
+        if (selectedPlayersContainer.childNodes.length > 5) {
             removeLastChild('selected-players-container');
             alert('You cant add More than 5  players');
             button.removeAttribute('disabled');
