@@ -1,6 +1,6 @@
 // ===================================SELECTING PLAYERS==========================================
 let selectedPlayers = [];
-
+let count = 0;
 let buttons = document.querySelectorAll('.button-select');
 for (let button of buttons) {
     button.addEventListener('click', function () {
@@ -13,12 +13,12 @@ for (let button of buttons) {
 
         let selectedPlayersContainer = document.getElementById('selected-players-container');
         selectedPlayersContainer.textContent = '';
-
         for (let i = 0; i < selectedPlayers.length; i++) {
             let li = document.createElement('li');
             li.classList = 'list';
             li.innerHTML = selectedPlayers[i].playerName;
             selectedPlayersContainer.appendChild(li);
+            count = i + 1;
 
             if (selectedPlayersContainer.childNodes.length > 5) {
                 removeLastChild('selected-players-container');
@@ -27,6 +27,7 @@ for (let button of buttons) {
 
                 return;
             }
+            setTextElementValueById('count', count);
         }
         button.setAttribute('disabled', true);
         button.style.backgroundColor = '#758283';
