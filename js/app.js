@@ -40,12 +40,16 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     let playerFieldElement = document.getElementById('per-player-field');
     let playerFieldAmount = getInputFieldValueById('per-player-field');
     let ol = document.getElementById('selected-players-container');
-    console.log(ol);
     let numberOfPlayersSelected = ol.childNodes.length;
 
     if (isNaN(playerFieldAmount)) {
         alert('Enter a valid Amount');
         playerFieldElement.value = '';
+        return;
+    } else if (playerFieldAmount < 0) {
+        alert('Enter a positive Amount');
+        playerFieldElement.value = '';
+
         return;
     } else if (selectedPlayers.length == 0) {
         alert('You have to choose players before calculating the cost');
@@ -64,6 +68,8 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     let coachFieldElement = document.getElementById('coach-field');
     let managerFieldAmount = getInputFieldValueById('manager-field');
     let coachFieldAmount = getInputFieldValueById('coach-field');
+
+    // validation
     if (isNaN(managerFieldAmount)) {
         alert('Enter a valid Amount');
         managerFieldElement.value = '';
@@ -74,11 +80,14 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
         alert('Enter a valid Amount');
         coachFieldElement.value = '';
         return;
+    } else if (managerFieldAmount < 0 || coachFieldAmount < 0) {
+        managerFieldElement.value = '';
+        coachFieldElement.value = '';
+        alert('Enter a positive Amount');
+        return;
     }
 
     let playerExpenseAmount = getTextElementValueById('player-expense');
-
-    // validation
 
     let totalAmount = managerFieldAmount + coachFieldAmount + playerExpenseAmount;
     setTextElementValueById('total-amount', totalAmount);
